@@ -417,6 +417,26 @@ footer {
   padding: 20px;
 }
 /* ----------------------
+  SHOP
+   ---------------------- */
+.item-top,
+.item-center,
+.item-end {
+  flex-wrap: wrap;
+}
+.item img {
+  width: 50%;
+}
+.beauty-wrapper,
+.food-wrapper,
+.fashion-wrapper {
+  display: flex;
+}
+.item-beauty {
+  width: 30%;
+}
+
+/* ----------------------
   スマホスタイル
    ---------------------- */
 @media screen and (max-width: 767px) {
