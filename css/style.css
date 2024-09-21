@@ -57,6 +57,9 @@ header::after {
 .top-logo img {
   width: 50%;
 }
+#nav-pc img {
+  width: 30%;
+}
 #nav-pc {
   display: flex;
   justify-content: center;
@@ -67,16 +70,16 @@ header::after {
   background-color: #3d7550;
   width: 630px;
   height: 70px;
+  padding-left: 20px;
 }
 #nav-pc > a {
   color: #fff;
+  width: 100px;
+  text-align-last: center;
 }
 #nav-pc > a:link {
   color: #0d0d0d;
 }
-/* #nav-pc > a:visited {
-  color: #fff;
-} */
 #nav-pc > a:hover {
   color: #888484;
   text-decoration: underline;
@@ -247,9 +250,15 @@ header::after {
 .product-end-right img {
   margin: 30px auto;
 }
-.online-btn {
+.online {
   display: flex;
   justify-content: flex-end;
+}
+.online-btn {
+  transition: 0.5s;
+}
+.online-btn:hover {
+  transform: scale(1.2, 1.2);
 }
 /* ----------------------
   ニュース
@@ -419,23 +428,71 @@ footer {
 /* ----------------------
   SHOP
    ---------------------- */
+.sidebar {
+  width: 100%;
+}
+.item {
+  width: 100%;
+  display: flex;
+}
+.items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .item-top,
 .item-center,
 .item-end {
   flex-wrap: wrap;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+.item-top,
+.item-end {
+  background-color: #f7f5e9;
 }
 .item img {
-  width: 50%;
+  width: 80%;
+  margin: 0 auto;
+}
+.item h5 img {
+  width: 80%;
 }
 .beauty-wrapper,
 .food-wrapper,
 .fashion-wrapper {
   display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-.item-beauty {
+.item-beauty,
+.item-food,
+.item-fashion {
   width: 30%;
+  height: 510px;
 }
-
+.shop-btn {
+  background-color: #262627;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.shop-btn:hover {
+  background-color: #3d7550;
+}
+.section_subtitle {
+  /* text-decoration: underline; */
+}
+.sidebar_categories li {
+  list-style: none;
+}
+.sidebar_categories li a {
+  color: #000;
+}
+.sidebar_categories li a:hover {
+  color: #3d7550;
+}
 /* ----------------------
   スマホスタイル
    ---------------------- */
