@@ -4,35 +4,35 @@
       <!-- メインビジュアル -->
       <section id="main-visual">
         <div class="main-massage">
-          <img src="image/PC/mv-text.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/mv-text.png" />
         </div>
         <div class="mv-photo">
         <div class="single-item">
-            <div><img src="image/PC/about-head.jpg" alt="木の芽" /></div>
-            <div><img src="image/PC/FV-img01s.png" alt="雑貨" /></div>
-            <div><img src="image/PC/FV-img02s.png" alt="洋服" /></div>
-            <div><img src="image/PC/FV-img03s.jpg" alt="石鹸" /></div>
-            <div><img src="image/PC/FV-img04s.jpg" alt="お皿" /></div>
+            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-head.jpg" alt="木の芽" /></div>
+            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img01s.png" alt="雑貨" /></div>
+            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img02s.png" alt="洋服" /></div>
+            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img03s.jpg" alt="石鹸" /></div>
+            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img04s.jpg" alt="お皿" /></div>
           </div>
           <div class="mv-photo-mini">
-            <img src="image/PC/about-slider (1).jpg" alt="水滴" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-slider (1).jpg" alt="水滴" />
           </div>
         </div>
       </section>
       <!-- アバウト -->
       <section id="about">
         <div class="section-logo">
-          <img src="image/PC/A.png" alt="aboutロゴ" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/A.png" alt="aboutロゴ" />
         </div>
         <div class="about-top-wrap">
           <div class="about-top-left">
             <h1>
               『サステナブルな選択』で <br />地球にもあなたにも優しい喜びを
             </h1>
-            <img src="image/PC/about-img.jpg" alt="手のひらと木" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-img.jpg" alt="手のひらと木" />
           </div>
           <div class="about-top-right">
-            <img src="image/PC/about-slider (3).jpg" alt="石鹸など" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-slider (3).jpg" alt="石鹸など" />
             <p>
               私たちは、お客様との長いお付き合いを大切にし、
               環境に優しいサステナブルな商品を通じて、
@@ -48,9 +48,9 @@
 
       <div class="about-end">
         <div class="about-end-left1">
-          <img src="image/PC/about-slider (4).jpg" alt="砂浜" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-slider (4).jpg" alt="砂浜" />
           <div class="about-end-left2">
-            <img src="image/SP/FV-img01.jpg" alt="雑貨" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/SP/FV-img01.jpg" alt="雑貨" />
             <p>
               私たちのビジョンは、人や環境、
               社会に良い影響を与える活動を応援し、
@@ -61,14 +61,14 @@
           </div>
         </div>
         <div class="about-end-right">
-          <img src="image/SP/FV-img03.jpg" alt="石鹸" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/SP/FV-img03.jpg" alt="石鹸" />
         </div>
       </div>
 
       <!-- プロダクト -->
       <section id="product">
         <div class="section-logo">
-          <img src="image/PC/P.png" alt="productロゴ" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/P.png" alt="productロゴ" />
         </div>
 
         <div class="product-top">
@@ -77,7 +77,7 @@
               お客様の理想の<br />
               サステナブルライフに寄り添います
             </h1>
-            <img src="image/PC/beauty.jpg" alt="緑の中のボトル" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/beauty.jpg" alt="緑の中のボトル" />
           </div>
           <div class="product-top-right">
             <p>
@@ -87,11 +87,11 @@
               各カテゴリーごとに、それぞれの商品が持つ特徴などを解説しています。<br />
               あなたの日常に、持続可能な選択を取り入れてみませんか？
             </p>
-            <img src="image/PC/about-slider (2).jpg" alt="素材" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-slider (2).jpg" alt="素材" />
           </div>
         </div>
 
-        <h5><img src="image/PC/Beauty ーオーガニックコスメー_.png" /></h5>
+        <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Beauty ーオーガニックコスメー_.png" /></h5>
         <div class="product-center">
           <div class="product-center-left">
             <p>
@@ -104,18 +104,18 @@
               製造プロセスを採用しており、 農薬や化学肥料を使用せず、
               持続可能な方法で育てられた植物を 原料としています。
             </p>
-            <img src="image/shop/item (2).jpg" alt="美容クリーム" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (2).jpg" alt="美容クリーム" />
           </div>
           <div class="product-center-center">
-            <img src="image/shop/item (3).jpg" alt="シャンプー" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (3).jpg" alt="シャンプー" />
           </div>
           <div class="product-center-right">
             <div class="product-right-photo">
-              <img src="image/SP/FV-img02.jpg" alt="洋服" />
+              <img src="<?php echo get_template_directory_uri(); ?>/image/SP/FV-img02.jpg" alt="洋服" />
             </div>
             <div class="product-right-text">
               <h5>
-                <img src="image/PC/Fashion ーオーガニックコットンー_.png" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Fashion ーオーガニックコットンー_.png" />
               </h5>
               <p>
                 オーガニックコットンやリサイクル素材を使用し、
@@ -133,7 +133,7 @@
 
         <div class="product-end">
           <div class="product-end-left">
-            <h5><img src="image/PC/Food ーオーガニックフードー_.png" /></h5>
+            <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Food ーオーガニックフードー_.png" /></h5>
             <p>
               オーガニックやフェアトレードの食材を通じて、
               環境に優しいライフスタイルをサポート。
@@ -148,19 +148,19 @@
             </p>
           </div>
           <div class="product-end-right">
-            <img src="image/PC/food.jpg" alt="ジャム" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/food.jpg" alt="ジャム" />
           </div>
         </div>
         <div class="online">
           <h2>Online Shop</h2>
           <a href="shop.html" class="online-btn"
-            ><img src="image/PC/arrow2.png"
+            ><img src="<?php echo get_template_directory_uri(); ?>/image/PC/arrow2.png"
           /></a>
         </div>
       </section>
       <!-- ニュース -->
       <div class="section-logo">
-        <img src="image/PC/N.png" alt="newsロゴ" />
+        <img src="<?php echo get_template_directory_uri(); ?>/image/PC/N.png" alt="newsロゴ" />
       </div>
       <section id="news">
         <div class="news-text">
@@ -195,7 +195,7 @@
       <!-- コンタクト -->
       <section id="contact">
         <div class="section-logo">
-          <img src="image/PC/C.png" alt="contactロゴ" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/C.png" alt="contactロゴ" />
         </div>
         <div class="contact-text">
           <button class="contact-btn">お問い合わせはこちらから</button>
@@ -207,19 +207,19 @@
         <div class="contact-photo">
           <div class="contact-photo-top">
             <div class="contact-photo-top1">
-              <img src="image/PC/about-img(2).png" alt="海" />
+              <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-img(2).png" alt="海" />
             </div>
             <div class="contact-photo-top2">
-              <img src="image/PC/cta.jpg" alt="海と建物" />
+              <img src="<?php echo get_template_directory_uri(); ?>/image/PC/cta.jpg" alt="海と建物" />
             </div>
           </div>
 
           <div class="contact-photo-top3">
-            <img src="image/PC/about-slider (5).jpg" alt="風力発電" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-slider (5).jpg" alt="風力発電" />
           </div>
         </div>
         <div class="contact-photo-end">
-          <img src="image/PC/contact-head.jpg" alt="子供達" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/contact-head.jpg" alt="子供達" />
           <p>
             私たちが紹介するのは、環境に優しく、使い終わったら土に還るもの、<br />
             人権や労働環境に配慮したアイテム、大量生産ではなく手作りされた商品、そして地域の伝統を大切にした製品です。<br />
@@ -229,7 +229,7 @@
       </section>
       <!-- 会社概要 -->
       <div class="company-logo">
-        <img src="image/PC/logo2.jpg" alt="ロゴ" />
+        <img src="<?php echo get_template_directory_uri(); ?>/image/PC/logo2.jpg" alt="ロゴ" />
       </div>
       <section id="company">
         <h3>会社概要</h3>

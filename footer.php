@@ -7,11 +7,11 @@
     <!-- footer -->
     <footer>
       <div class="footer-link">
-        <a href="<?php echo get_template_directory_uri(); ?>/about">About</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/product">product</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/news">News</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/shop">Shopping</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/contact">Contact</a>
+        <a href="<?php echo home_url(); ?>/about">About</a>
+        <a href="<?php echo home_url(); ?>/product">product</a>
+        <a href="<?php echo home_url(); ?>/news">News</a>
+        <a href="<?php echo home_url(); ?>/shop">Shopping</a>
+        <a href="<?php echo home_url(); ?>/contact">Contact</a>
       </div>
       <div id="copyright">
         <span> &copy;Eco Shop. All Rights Resarved.</span>

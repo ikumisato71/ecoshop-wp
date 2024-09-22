@@ -25,16 +25,16 @@
     <!-- header -->
     <header>
       <div class="top-logo">
-        <a href="index.html"><img src="image/PC/logo2.jpg" /></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/logo2.jpg" /></a>
       </div>
       <!-- PC用ナビゲーション -->
       <nav id="nav-pc">
-        <a href="<?php echo get_template_directory_uri(); ?>/about">About</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/product">product</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/news">News</a>
-        <a href="<?php echo get_template_directory_uri(); ?>/shop">Shopping</a>
-        <a href="i<?php echo get_template_directory_uri(); ?>/contact">Contact</a>
-        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/PC/cart.png" class="online-btn" /></a>
+        <a href="<?php echo home_url(); ?>/about">About</a>
+        <a href="<?php echo home_url(); ?>/product">product</a>
+        <a href="<?php echo home_url(); ?>/news">News</a>
+        <a href="<?php echo home_url(); ?>/shop">Shopping</a>
+        <a href="<?php echo home_url(); ?>/contact">Contact</a>
+        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/cart.png" class="online-btn" /></a>
       </nav>
     </header>
     <!-- /header -->
