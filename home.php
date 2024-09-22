@@ -7,8 +7,12 @@
           <img src="image/PC/mv-text.png" />
         </div>
         <div class="mv-photo">
-          <div class="mv-photo-big">
-            <img src="image/PC/about-head.jpg" alt="木の芽" />
+        <div class="single-item">
+            <div><img src="image/PC/about-head.jpg" alt="木の芽" /></div>
+            <div><img src="image/PC/FV-img01s.png" alt="雑貨" /></div>
+            <div><img src="image/PC/FV-img02s.png" alt="洋服" /></div>
+            <div><img src="image/PC/FV-img03s.jpg" alt="石鹸" /></div>
+            <div><img src="image/PC/FV-img04s.jpg" alt="お皿" /></div>
           </div>
           <div class="mv-photo-mini">
             <img src="image/PC/about-slider (1).jpg" alt="水滴" />
