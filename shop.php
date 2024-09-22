@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <title>Eco shop</title>
-    <link rel="icon" href="image/PC/favicon.jpg" />
-    <meta name="description" content="サスティナブル" />
-
-    <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  </head>
-
-  <body>
-    <!-- header -->
-    <header>
-      <div class="top-logo">
-        <a href="index.html"><img src="image/PC/logo2.jpg" /></a>
-      </div>
-      <!-- PC用ナビゲーション -->
-      <nav id="nav-pc">
-        <a href="index.html#about">About</a>
-        <a href="index.html#product">product</a>
-        <a href="index.html#news">News</a>
-        <a href="shop.html">Shopping</a>
-        <a href="index.html#contact">Contact</a>
-        <a href=""><img src="image/PC/cart.png" class="online-btn" /></a>
-      </nav>
-    </header>
-    <!-- /header -->
+<?php get_header();?>
 
     <main>
       <div class="item">
@@ -43,9 +11,9 @@
             </div>
             <div class="sidebar_categories">
               <ul>
-                <li><a href="#">ビューティー</a></li>
-                <li><a href="#">フード</a></li>
-                <li><a href="#">ファッション</a></li>
+                <li><a href="#item-top">ビューティー</a></li>
+                <li><a href="#item-center">フード</a></li>
+                <li><a href="#item-end">ファッション</a></li>
               </ul>
             </div>
           </div>
@@ -53,11 +21,11 @@
 
         <!-- 商品-->
         <div class="items-center">
-          <div class="item-top">
-            <h5><img src="image/PC/Beauty ーオーガニックコスメー_.png" /></h5>
+          <div id="item-top">
+            <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Beauty ーオーガニックコスメー_.png" /></h5>
             <div class="beauty-wrapper">
               <div class="item-beauty">
-                <img src="image/shop/item (3).jpg" alt="シャンプー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (3).jpg" alt="シャンプー" />
                 <h6>エコナチュールシャンプー</h6>
                 <p>¥<span>2,000</span>（税込）</p>
                 <p>
@@ -68,8 +36,8 @@
                 <button class="shop-btn">カートに入れる</button>
               </div>
               <div class="item-beauty">
-                <img src="image/shop/item (2).jpg" alt="シャンプー" />
-                <h6>エコナチュールシャンプー</h6>
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (2).jpg" alt="クリーム" />
+                <h6>グリーンレーヴ<br>フェイスクリーム</h6>
                 <p>¥<span>2,000</span>（税込）</p>
                 <p>
                   高保湿で敏感肌にも優しい<br />天然成分配合。<br />
@@ -78,7 +46,7 @@
                 <button class="shop-btn">カートに入れる</button>
               </div>
               <div class="item-beauty">
-                <img src="image/shop/item (1).jpg" alt="美容クリーム" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (1).jpg" alt="美容乳液" />
                 <h6>ピュアリーフスムースミルク</h6>
                 <p>¥<span>2,000</span>（税込）</p>
                 <p>
@@ -90,13 +58,13 @@
             </div>
           </div>
 
-          <div class="item-center">
+          <div id="item-center">
             <h5>
-              <img src="image/PC/Food ーオーガニックフードー_.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Food ーオーガニックフードー_.png" />
             </h5>
             <div class="food-wrapper">
               <div class="item-food">
-                <img src="image/shop/item (8).jpg" alt="チョコレート" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (8).jpg" alt="チョコレート" />
                 <h6>
                   ナチュラルカカオ<br />
                   チョコレート
@@ -109,7 +77,7 @@
                 <button class="shop-btn">カートに入れる</button>
               </div>
               <div class="item-food">
-                <img src="image/shop/item (7).jpg" alt="クッキー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (7).jpg" alt="クッキー" />
                 <h6>エコスイートクッキー</h6>
                 <p>¥<span>1,000</span>（税込）</p>
                 <p>
@@ -119,7 +87,7 @@
                 <button class="shop-btn">カートに入れる</button>
               </div>
               <div class="item-food">
-                <img src="image/shop/item (9).jpg" alt="コーヒー豆" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (9).jpg" alt="コーヒー豆" />
                 <h6>グランドリッチコーヒー豆</h6>
                 <p>¥<span>1,000</span>（税込）</p>
                 <p>
@@ -131,13 +99,13 @@
             </div>
           </div>
 
-          <div class="item-end">
+          <div id="item-end">
             <h5>
-              <img src="image/PC/Fashion ーオーガニックコットンー_.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Fashion ーオーガニックコットンー_.png" />
             </h5>
             <div class="fashion-wrapper">
               <div class="item-fashion">
-                <img src="image/shop/item (5).jpg" alt="帽子" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (5).jpg" alt="帽子" />
                 <h6>エコリーフハット</h6>
                 <p>¥<span>2,000</span>（税込）</p>
                 <p>
@@ -147,7 +115,7 @@
                 <button class="shop-btn">カートに入れる</button>
               </div>
               <div class="item-fashion">
-                <img src="image/shop/item (4).jpg" alt="カーディガン" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (4).jpg" alt="カーディガン" />
                 <h6>ナチュラルカーディガン</h6>
                 <p>¥<span>2,000</span>（税込）</p>
                 <p>
@@ -157,7 +125,7 @@
                 <button class="shop-btn">カートに入れる</button>
               </div>
               <div class="item-fashion">
-                <img src="image/shop/item (6).jpg" alt="パンツ" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (6).jpg" alt="パンツ" />
                 <h6>ナチュラルフローパンツ</h6>
                 <p>¥<span>2,000</span>（税込）</p>
                 <p>
@@ -171,25 +139,4 @@
         </div>
       </div>
     </main>
-    <!-- トップへ戻る -->
-    <div class="page-top" id="js-page-top">
-      <span class="arrow"><img src="image/PC/arrow.png" alt="" /></span>
-    </div>
-
-    <!-- footer -->
-    <footer>
-      <div class="footer-link">
-        <a href="index.html#about">About</a>
-        <a href="index.html#product">product</a>
-        <a href="index.html#news">News</a>
-        <a href="shop.html">Shopping</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-      <div id="copyright">
-        <span> &copy;Eco Shop. All Rights Resarved.</span>
-      </div>
-    </footer>
-    <!-- /footer -->
-    <script src="js/script.js"></script>
-  </body>
-</html>
+    <?php get_footer(); ?>
