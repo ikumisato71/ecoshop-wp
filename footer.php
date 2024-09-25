@@ -1,6 +1,6 @@
       <!-- トップへ戻る -->
       <div class="page-top" id="js-page-top">
-        <span class="arrow"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/arrow.png" alt="" /></span>
+        <span class="arrow"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/arrow.png" alt="矢印" /></span>
       </div>
     </main>
 

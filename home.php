@@ -4,7 +4,7 @@
       <!-- メインビジュアル -->
       <section id="main-visual">
         <div class="main-massage">
-          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/mv-text.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/mv-text.png" alt="メッセージ"/>
         </div>
         <div class="mv-photo">
         <div class="single-item">
@@ -91,7 +91,7 @@
           </div>
         </div>
 
-        <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Beauty ーオーガニックコスメー_.png" /></h5>
+        <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Beauty ーオーガニックコスメー_.png" alt="ビューティーロゴ" /></h5>
         <div class="product-center">
           <div class="product-center-left">
             <p>
@@ -115,7 +115,7 @@
             </div>
             <div class="product-right-text">
               <h5>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Fashion ーオーガニックコットンー_.png" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Fashion ーオーガニックコットンー_.png"alt="ファッションロゴ"  />
               </h5>
               <p>
                 オーガニックコットンやリサイクル素材を使用し、
@@ -133,7 +133,7 @@
 
         <div class="product-end">
           <div class="product-end-left">
-            <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Food ーオーガニックフードー_.png" /></h5>
+            <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Food ーオーガニックフードー_.png" alt="フードロゴ" /></h5>
             <p>
               オーガニックやフェアトレードの食材を通じて、
               環境に優しいライフスタイルをサポート。
@@ -154,7 +154,7 @@
         <div class="online">
           <h2>Online Shop</h2>
           <a href="shop.html" class="online-btn"
-            ><img src="<?php echo get_template_directory_uri(); ?>/image/PC/arrow2.png"
+            ><img src="<?php echo get_template_directory_uri(); ?>/image/PC/arrow2.png" alt="矢印" 
           /></a>
         </div>
       </section>
