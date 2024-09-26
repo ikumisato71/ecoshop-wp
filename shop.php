@@ -4,7 +4,9 @@
 Template Name: shop
 
 */
-?><?php get_header();?>
+?>
+
+<?php get_header();?>
 
     <main>
       <div class="item">
