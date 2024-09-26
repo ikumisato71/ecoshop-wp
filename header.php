@@ -61,27 +61,8 @@
                 >Product
                 </a>
               </li>
-              <!-- <li>
-                <button
-                  type="button"
-                  class="global-navigation__link -accordion js-sp-accordion-trigger"
-                  aria-expanded="false"
-                  aria-controls="accordion1"
-                >
-                  <a
-                    href="#exhibition"
-                    class="global-navigation__link"
-                  >
-                    Exhibition</a
-                  >
-                </button>
-                <div id="accordion1" class="accordion js-accordion">
-                  <ul class="accordion__list">
-                  </ul>
-                </div>
-              </li> -->
               <li>
-                <a href="#news" class="global-navigation__link">
+                <a href="<?php echo home_url("/home/#news")?>" class="global-navigation__link">
                 News
                 </a>
               </li>

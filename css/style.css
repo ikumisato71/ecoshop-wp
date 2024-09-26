@@ -56,6 +56,9 @@ h6 {
   font-weight: 400;
   margin: 15px;
 }
+hr {
+  color: #ccc;
+}
 /* ----------------------
   ヘッダー
    ---------------------- */
@@ -283,7 +286,7 @@ header::after {
 #news {
   background-color: #f7f5e9;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   padding: 100px 15px 0px 15px;
   margin-top: -70px;
 }
@@ -437,26 +440,36 @@ footer {
   SHOP
    ---------------------- */
 .sidebar {
-  width: 100%;
+  width: 30%;
   padding: 10px;
   text-align: center;
+}
+.section_subtitle {
+  padding: 15px;
+}
+.sidebar_categories li {
+  list-style: none;
+}
+.sidebar_categories li a {
+  color: #000;
+}
+.sidebar_categories li a:hover {
+  color: #3d7550;
 }
 .item {
   width: 100%;
   display: flex;
 }
-.section_subtitle {
-  padding: 15px;
-}
-#items-container {
+
+.items-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 85%;
 }
 #item-top,
 #item-center,
 #item-end {
-  padding-bottom: 60px;
+  padding: 20px;
   margin-bottom: 60px;
 }
 #item-top,
@@ -481,6 +494,19 @@ footer {
 .item-fashion {
   text-align: center;
 }
+.item-beauty h6,
+.item-food h6,
+.item-fashion h6 {
+  height: 70px;
+}
+.item-beauty img,
+.item-food img,
+.item-fashion img {
+  height: auto;
+}
+.item-ex {
+  height: 170px;
+}
 .shop-btn {
   background-color: #262627;
   border-radius: 10px;
@@ -492,31 +518,23 @@ footer {
   background-color: #3d7550;
 }
 
-.sidebar_categories li {
-  list-style: none;
-}
-.sidebar_categories li a {
-  color: #000;
-}
-.sidebar_categories li a:hover {
-  color: #3d7550;
-}
 /* ----------------------
   スマホスタイル
    ---------------------- */
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 20px;
-    font-weight: 800;
-  }
-  header {
-    width: 90%;
-    margin: 0 auto;
-  }
   body {
     min-width: 375px;
     margin: 0;
     /* overflow: hidden; */
+  }
+
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 800;
   }
   #main-visual {
     height: 40vh;
@@ -529,6 +547,11 @@ footer {
   .main-massage img {
     width: 50%;
   }
+
+  .single-item img {
+    width: 100%;
+  }
+
   .about-top-wrap {
     display: block;
     text-align: center;
@@ -560,6 +583,9 @@ footer {
 
   #product {
     margin-top: 250px;
+  }
+  .product-top-left img {
+    margin: 0 auto;
   }
   .product-top::after {
     width: 90%;
@@ -643,8 +669,9 @@ footer {
     display: block;
     gap: 0px;
   }
-  /* shop html */
-
+  /* ---------------
+  shop html
+----------------- */
   .beauty-wrapper,
   .food-wrapper,
   .fashion-wrapper {
@@ -668,6 +695,14 @@ footer {
   }
   #nav-pc {
     display: none;
+  }
+  .sidebar {
+    width: 90%;
+    margin: auto;
+  }
+  .items-container {
+    width: 90%;
+    margin: auto;
   }
   /* スマホ　ハンバーガーメニュー */
   /* スマホ用ナビを非表示 */
@@ -695,9 +730,6 @@ footer {
     top: 0;
     transform: rotate(-45deg);
   }
-  /* .hamburger.-active .hamburger__text::before {
-    content: "閉じる";
-  } */
   .hamburger__line {
     display: block;
     height: 2px;
@@ -732,16 +764,6 @@ footer {
     transform: translateX(-50%);
     width: 100%;
   }
-  /* .hamburger__text::before {
-    content: "MENU";
-    text-align: center;
-    color: #172e59;
-    font-size: 10px;
-    font-weight: 900;
-  } */
-  /* .header {
-    width: 300px;
-  } */
   .header__nav-area {
     position: fixed;
     top: 0;
