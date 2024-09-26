@@ -204,9 +204,8 @@ Template Name: home
           <img src="<?php echo get_template_directory_uri(); ?>/image/PC/C.png" alt="contactロゴ" />
         </div>
         <div class="contact-text">
-          <button class="contact-btn">お問い合わせはこちらから</button>
-          <p>
-            弊社へのお問い合わせは、フォームより受け付けております。
+          <button class="contact-btn">  お問い合わせはこちらから</button>
+            <p> 弊社へのお問い合わせは、フォームより受け付けております。
             確認後、折り返しご連絡させていただきます。
           </p>
         </div>
