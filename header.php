@@ -8,7 +8,7 @@
     />
     <title>Eco shop</title>
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/image/PC/favicon.jpg" />
-    <meta name="description" content="サスティナブル" />
+    <meta name="description" content="未来のために、サスティナブルに。Eco for the future" />
 
     <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" />
