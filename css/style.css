@@ -660,7 +660,7 @@ details > div > span {
   }
 
   #product {
-    margin-top: 250px;
+    margin-top: 300px;
   }
   .product-top-left img {
     margin: 0 auto;
@@ -699,7 +699,7 @@ details > div > span {
     flex-direction: column;
   }
   #news {
-    height: 100vh;
+    height: 130vh;
   }
   .news-text-left,
   .news-text-right {
