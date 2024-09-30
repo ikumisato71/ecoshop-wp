@@ -595,7 +595,58 @@ details > div > span {
 .shop-btn:hover {
   background-color: #3d7550;
 }
+/* ----------------------
+  ACF
+   ---------------------- */
 
+.product-information {
+  display: block;
+  margin-top: 100px;
+}
+
+.product-img {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+.item-group {
+  display: flex;
+  height: auto;
+}
+
+.item {
+  width: 218px;
+  height: auto;
+  border: 0.5px solid #1b224c;
+  margin-right: 7px;
+}
+
+.item:nth-of-type(4) {
+  margin-right: 0;
+}
+
+.title {
+  width: 218px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  margin-right: 7px;
+  background-color: gray;
+  color: #ffffff;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.contents {
+  font-size: 25px;
+  font-weight: bold;
+}
 /* ----------------------
   スマホスタイル
    ---------------------- */
