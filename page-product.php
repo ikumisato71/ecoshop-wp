@@ -1,12 +1,13 @@
+
 <?php
 /*
-Template Name:item
+Template Name: product
 
 */
 ?>
 <div class="product-information">
     <div class="product-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/kodomofuku_girl.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/item (1).jpg" alt="">
     </div>
     <div class="item-group">
         <div class="item">
