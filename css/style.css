@@ -584,6 +584,17 @@ details > div > span {
   background-color: #3d7550;
 }
 /* ----------------------
+  form
+   ---------------------- */
+
+form,
+figure,
+dl {
+  display: grid;
+  justify-content: center;
+}
+
+/* ----------------------
   ACF
    ---------------------- */
 /* 

@@ -31,7 +31,7 @@
         <a href="#product">Product</a>
         <a href="#news">News</a>
         <a href="<?php echo home_url(); ?>/shop">Shopping</a>
-        <a href="#contact">Contact</a>
+        <a href="<?php echo home_url(); ?>/contact">Contact</a>
         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/cart.png" alt="カートアイコン"  class="online-btn" /></a>
       </nav>
   <!-- ハンバーガーメニュー -->
