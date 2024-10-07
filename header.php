@@ -11,10 +11,12 @@
     <meta name="description" content="未来のために、サスティナブルに。Eco for the future" />
 
     <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" media="all" type="text/css" />
-
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@8/swiper.min.css">
     <?php wp_head();?>
   </head>
   <body>

@@ -10,12 +10,12 @@ pageTopButton.addEventListener("click", () => {
   });
 });
 
-$(".single-item").slick({
-  autoplay: true, // 自動再生
-  fade: true, // スライドをフェードイン・フェードアウト
-  cssEase: "linear", // アニメーション
-  speed: 600, // フェードアニメーションの速度設定
-});
+// $(".single-item").slick({
+//   autoplay: true, // 自動再生
+//   fade: true, // スライドをフェードイン・フェードアウト
+//   cssEase: "linear", // アニメーション
+//   speed: 600, // フェードアニメーションの速度設定
+// });
 
 // ハンバーガーメニュー
 // メニュー展開時に背景を固定
@@ -107,3 +107,69 @@ accordionTrigger.forEach((item) => {
 focusTrap.addEventListener("focus", (e) => {
   hamburger.focus();
 });
+
+// -----------
+// swiper
+// -----------
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "vertical", // 縦方向にスライド
+  loop: true, // ループを有効にする
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // Scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  // Autoplay option (自動再生設定)
+  autoplay: {
+    delay: 3000, // 3秒ごとにスライドが切り替わる
+    disableOnInteraction: false, // ユーザーが操作しても自動再生を止めない
+  },
+});
+
+// const slideLength = document.querySelectorAll(".card05 .swiper-slide").length;
+
+// const initSwiper = () => {
+//   const mySwiper = new Swiper(".card05 .swiper", {
+//     slidesPerView: "auto",
+//     spaceBetween: 16,
+//     loop: true,
+//     loopedSlides: slideLength,
+//     speed: 8000,
+//     autoplay: {
+//       delay: 0,
+//       disableOnInteraction: false,
+//     },
+//     freeMode: {
+//       enabled: true,
+//       momentum: false,
+//     },
+//     grabCursor: true,
+//     breakpoints: {
+//       1025: {
+//         spaceBetween: 32,
+//       },
+//     },
+//     on: {
+//       touchEnd: (swiper) => {
+//         swiper.slideTo(swiper.activeIndex + 1);
+//       },
+//     },
+//   });
+// };
+
+// window.addEventListener("load", function () {
+//   initSwiper();
+// });

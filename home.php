@@ -9,20 +9,47 @@ Template Name: home
 <main>
       <!-- メインビジュアル -->
       <section id="main-visual">
-        <div class="main-massage">
+        <!-- <div class="main-massage">
           <img src="<?php echo get_template_directory_uri(); ?>/image/PC/mv-text.png" alt="メッセージ"/>
-        </div>
+        </div> -->
         <div class="mv-photo">
-        <div class="single-item">
-            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-head.jpg" alt="木の芽" /></div>
-            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img01s.png" alt="雑貨" /></div>
-            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img02s.png" alt="洋服" /></div>
-            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img03s.jpg" alt="石鹸" /></div>
-            <div><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img04s.jpg" alt="お皿" /></div>
-          </div>
-          <div class="mv-photo-mini">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-slider (1).jpg" alt="水滴" />
-          </div>
+
+        <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-head.jpg" alt="木の芽" /></div>
+          <h2 class="slide-title">Lorem ipsum dolor sit amet</h2>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img01s.png" alt="雑貨" /></div>
+          <h2 class="slide-title">Sed eiusmod</h2>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img02s.png" alt="洋服" /></div>
+          <h2 class="slide-title">Ut enim</h2>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <article class="slide">
+          <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img03s.jpg" alt="石鹸" /></div>
+          <h2 class="slide-title">Quis nostrum<br>exercitationem</h2>
+        </article>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img04s.jpg" alt="お皿" /></div>
+          <h2 class="slide-title">Quis aute iure</h2>
+        </div>
+      </div>
+    </div><!-- /swiper-wrapper -->
+    <div class="swiper-pagination"></div>
+  </div><!-- /swiper -->     
+
         </div>
       </section>
       <!-- アバウト -->
@@ -97,9 +124,10 @@ Template Name: home
           </div>
         </div>
 
-        <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Beauty ーオーガニックコスメー_.png" alt="ビューティーロゴ" /></h5>
-        <div class="product-center">
-          <div class="product-center-left">
+        <div class="product-beauty">
+          <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Beauty ーオーガニックコスメー_.png" alt="ビューティーロゴ" /></h5>
+          <div class="product-beauty-inner">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (3).jpg" alt="シャンプー" />
             <p>
               自然由来のオーガニック成分を活用し、
               お肌に優しいケアを提供しながら、
@@ -110,19 +138,16 @@ Template Name: home
               製造プロセスを採用しており、 農薬や化学肥料を使用せず、
               持続可能な方法で育てられた植物を 原料としています。
             </p>
-            <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (2).jpg" alt="美容クリーム" />
           </div>
-          <div class="product-center-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (3).jpg" alt="シャンプー" />
-          </div>
-          <div class="product-center-right">
-            <div class="product-right-photo">
+        </div>
+
+
+          <div class="product-fashion">
+            <h5>
+              <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Fashion ーオーガニックコットンー_.png"alt="ファッションロゴ"  />
+            </h5>
+            <div class="product-fashion-inner">
               <img src="<?php echo get_template_directory_uri(); ?>/image/SP/FV-img02.jpg" alt="洋服" />
-            </div>
-            <div class="product-right-text">
-              <h5>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/PC/Fashion ーオーガニックコットンー_.png"alt="ファッションロゴ"  />
-              </h5>
               <p>
                 オーガニックコットンやリサイクル素材を使用し、
                 環境に優しい衣類で持続可能なライフスタイルを実現します。<br />
@@ -135,11 +160,11 @@ Template Name: home
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="product-end">
-          <div class="product-end-left">
+        <div class="product-food">
             <h5><img src="<?php echo get_template_directory_uri(); ?>/image/PC/Food ーオーガニックフードー_.png" alt="フードロゴ" /></h5>
+            <div class="product-food-inner">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/food.jpg" alt="ジャム" />
             <p>
               オーガニックやフェアトレードの食材を通じて、
               環境に優しいライフスタイルをサポート。
@@ -152,11 +177,9 @@ Template Name: home
               自然環境や社会にできるだけ負担をかけない
               取り組みがおこなわれています。
             </p>
-          </div>
-          <div class="product-end-right">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/PC/food.jpg" alt="ジャム" />
-          </div>
+            </div>
         </div>
+
         <div class="online">
           <h2>Online Shop</h2>
           <a href="shop.html" class="online-btn"
@@ -164,11 +187,13 @@ Template Name: home
           /></a>
         </div>
       </section>
+
       <!-- ニュース -->
-      <div class="section-logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/PC/N.png" alt="newsロゴ" />
-      </div>
       <section id="news">
+        <div class="section-logo">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/PC/N.png" alt="newsロゴ" />
+        </div>
+        
         <div class="news-text">
           <div class="news-text-left">
             <h4>お知らせ</h4>
