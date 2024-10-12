@@ -9,7 +9,7 @@ Template Name: shop
 <?php get_header();?>
 
     <main>
-      <div class="item">
+      <div class="shop-item">
         <!-- サイドバー -->
         <div class="sidebar">
           <div class="category">

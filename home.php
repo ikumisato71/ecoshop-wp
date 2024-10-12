@@ -25,7 +25,7 @@ Template Name: home
       <div class="swiper-slide">
         <div class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img01s.png" alt="雑貨" /></div>
-          <h2 class="slide-title">Sed eiusmod</h2>
+          <h2 class="slide-title_black">Sed eiusmod</h2>
         </div>
       </div>
       <div class="swiper-slide">
@@ -37,13 +37,13 @@ Template Name: home
       <div class="swiper-slide">
         <article class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img03s.jpg" alt="石鹸" /></div>
-          <h2 class="slide-title">Quis nostrum<br>exercitationem</h2>
+          <h2 class="slide-title_black">Quis nostrum<br>exercitationem</h2>
         </article>
       </div>
       <div class="swiper-slide">
         <div class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img04s.jpg" alt="お皿" /></div>
-          <h2 class="slide-title">Quis aute iure</h2>
+          <h2 class="slide-title_black">Quis aute iure</h2>
         </div>
       </div>
     </div><!-- /swiper-wrapper -->

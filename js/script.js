@@ -113,8 +113,9 @@ focusTrap.addEventListener("focus", (e) => {
 // -----------
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: "vertical", // 縦方向にスライド
+  direction: "horizontal", // 横方向にスライド
   loop: true, // ループを有効にする
+  speed: 600, // スライド切り替え速度（ミリ秒）
 
   // If we need pagination
   pagination: {

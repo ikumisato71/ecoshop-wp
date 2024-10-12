@@ -26,15 +26,19 @@
         <a href="<?php echo home_url(); ?>"Home><img src="<?php echo get_template_directory_uri(); ?>/image/PC/logo2.jpg" alt="ロゴ" /></a>
       </div>
       <!-- PC用ナビゲーション -->
-      <nav id="nav-pc">
-        <a href="#about">About</a>
-        <a href="#product">Product</a>
-        <a href="#news">News</a>
-        <a href="<?php echo home_url(); ?>/shop">Shopping</a>
-        <a href="<?php echo home_url(); ?>/contact">Contact</a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/cart.png" alt="カートアイコン"  class="online-btn" /></a>
-      </nav>
-  <!-- ハンバーガーメニュー -->
+      <nav class="primary-navigation wrapper">
+        <!-- <button class="btn-menu">メニュー</button> -->
+        <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'main-menu',
+                    'container' => '',
+                    'menu_class' => 'menu-wrapper',
+                )
+            );
+        ?>
+    </nav>
+     <!-- ハンバーガーメニュー -->
     <div class="header__inner">
         <button
           id="js-hamburger"

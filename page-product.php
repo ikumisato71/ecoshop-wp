@@ -1,54 +1,57 @@
 
 <?php
 /*
-Template Name: product
+Template Name: item
 
 */
 ?>
+<?php get_header();?>
+
 <div class="product-information">
     <div class="product-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/item (1).jpg" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/image/shop/item (3).jpg" alt="シャンプー" />
     </div>
     <div class="item-group">
+        <div class="item">
+            <div class="title">
+                商品名
+            </div>
+            <div class="text">
+                <p class="contents">
+                <?php the_field('shampoo'); ?> 
+                </p>
+            </div>
+        </div>
         <div class="item">
             <div class="title">
                 価格
             </div>
             <div class="text">
                 <p class="contents">
-                    <?php echo number_format(get_field('price')); ?>円
+                <?php echo number_format(get_field('price')); ?>円
                 </p>
             </div>
         </div>
         <div class="item">
             <div class="title">
-                色
+                商品説明
             </div>
             <div class="text">
                 <p class="contents">
-                    <?php the_field('color'); ?>
+                    <?php the_field('description'); ?>
                 </p>
             </div>
         </div>
         <div class="item">
             <div class="title">
-                商品サイズ
+                製造地
             </div>
             <div class="text">
                 <p class="contents">
-                    <?php the_field('size'); ?>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="title">
-                商品番号
-            </div>
-            <div class="text">
-                <p class="contents">
-                    <?php the_field('number'); ?>
+                    <?php the_field('country'); ?>
                 </p>
             </div>
         </div>
     </div>
 </div>
+<?php get_footer(); ?>
