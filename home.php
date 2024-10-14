@@ -198,28 +198,95 @@ Template Name: home
           <div class="news-text-left">
             <h4>お知らせ</h4>
             <div class="news-text-left-inner">
-              <ul>
-                <li>東急ハンズ 横浜に出店します</li>
-                <li>そごう 横浜に出店します</li>
-                <li>年末年始休みのご案内</li>
-              </ul>
+            <?php
+               //取得したい投稿記事などの条件を引数として渡す
+                $args = array(
+                   // 投稿タイプ
+                    'post_type'      => 'post',
+                     // カテゴリー名
+                    'category_name' => 'news',
+                   // 1ページに表示する投稿数
+                    'posts_per_page' => 3,
+                );
+               // データの取得
+                $posts = get_posts($args);
+              ?>
+  
+              <!-- ループ処理 -->
+              <?php foreach($posts as $post): ?>
+              <?php setup_postdata($post); ?>
+              <div class="news_post_small">
+                <div class="news_post_meta">
+                  <ul>
+                    <li>
+                      <!-- aタグで投稿記事へのリンクを作成 -->
+                      <a href="<?php echo get_permalink(); ?>">
+                        <!-- 日付を出力する -->
+                        <?php echo get_the_date(); ?>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="news_post_small_title">
+                  <!--  aタグで投稿記事へのリンクを作成する -->
+                  <a href="<?php the_permalink(); ?>">
+                    <!--  投稿記事のタイトルを表示する -->
+                    <?php the_title(); ?>
+                  </a>
+                </div>
+              </div>
+  
+              <?php endforeach; ?>
+              <!-- 使用した投稿データをリセット -->
+              <?php wp_reset_postdata(); ?>             
             </div>
           </div>
+          
           <div class="news-text-right">
             <h4>トピックス</h4>
             <div class="news-text-right-inner">
-              <ul>
-                <li>
-                  脱炭素社会 産学一体」 京都・大阪・神戸 ３大学シンポジウムで
-                  日経新聞に掲載されました
-                </li>
-                <li>
-                  G7広島サミット2023にて
-                  環境配慮が低い紙パック(紙容器)ミネラルウォーターの全面的採用
-                </li>
-                <li>LINEヤフーのメディアリリースに掲載されました</li>
-              </ul>
-            </div>
+            <?php
+               //取得したい投稿記事などの条件を引数として渡す
+                $args = array(
+                   // 投稿タイプ
+                    'post_type'      => 'post',
+                   // カテゴリー名
+                    'category_name' => 'topics',
+                   // 1ページに表示する投稿数
+                    'posts_per_page' => 3,
+                );
+               // データの取得
+                $posts = get_posts($args);
+              ?>
+  
+              <!-- ループ処理 -->
+              <?php foreach($posts as $post): ?>
+              <?php setup_postdata($post); ?>
+              <div class="news_post_small">
+                <div class="news_post_meta">
+                  <ul>
+                    <li>
+                      <!-- aタグで投稿記事へのリンクを作成 -->
+                      <a href="<?php echo get_permalink(); ?>">
+                        <!-- 日付を出力する -->
+                        <?php echo get_the_date(); ?>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="news_post_small_title">
+                  <!--  aタグで投稿記事へのリンクを作成する -->
+                  <a href="<?php the_permalink(); ?>">
+                    <!--  投稿記事のタイトルを表示する -->
+                    <?php the_title(); ?>
+                  </a>
+                </div>
+              </div>
+  
+              <?php endforeach; ?>
+              <!-- 使用した投稿データをリセット -->
+              <?php wp_reset_postdata(); ?>           
+              </div>
           </div>
         </div>
       </section>
