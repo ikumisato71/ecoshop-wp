@@ -19,31 +19,31 @@ Template Name: home
       <div class="swiper-slide">
         <div class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/about-head.jpg" alt="木の芽" /></div>
-          <h2 class="slide-title">Lorem ipsum dolor sit amet</h2>
+          <h2 class="slide-title">未来のために、サステナブルに。<br>Eco for the future</h2>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img01s.png" alt="雑貨" /></div>
-          <h2 class="slide-title_black">Sed eiusmod</h2>
+          <h2 class="slide-title_black">『サステナブルな選択』で、<br>地球にもあなたにも優しい喜びを</h2>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img02s.png" alt="洋服" /></div>
-          <h2 class="slide-title">Ut enim</h2>
+          <h2 class="slide-title">持続可能な未来のために、<br>日々新しい挑戦を続けていきます。</h2>
         </div>
       </div>
       <div class="swiper-slide">
         <article class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img03s.jpg" alt="石鹸" /></div>
-          <h2 class="slide-title_black">Quis nostrum<br>exercitationem</h2>
+          <h2 class="slide-title_black">Customer satisfaction is <br>our motivation</h2>
         </article>
       </div>
       <div class="swiper-slide">
         <div class="slide">
           <div class="slide-media img-cover"><img src="<?php echo get_template_directory_uri(); ?>/image/PC/FV-img04s.jpg" alt="お皿" /></div>
-          <h2 class="slide-title_black">Quis aute iure</h2>
+          <h2 class="slide-title">Let's take a step towards <br>the future.</h2>
         </div>
       </div>
     </div><!-- /swiper-wrapper -->
@@ -196,7 +196,7 @@ Template Name: home
         
         <div class="news-text">
           <div class="news-text-left">
-            <h4>お知らせ</h4>
+            <h4>News</h4>
             <div class="news-text-left-inner">
             <?php
                //取得したい投稿記事などの条件を引数として渡す

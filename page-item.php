@@ -1,7 +1,8 @@
 
 <?php
 /*
-Template Name: item
+Template Name:item
+Template post Type:post
 
 */
 ?>

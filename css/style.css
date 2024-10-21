@@ -318,6 +318,13 @@ li {
   line-height: 1.8rem;
   padding: 15px;
 }
+.tab_panel_title {
+  font-size: 36px;
+  margin: 20px;
+  text-decoration: underline;
+  text-decoration-color: #3d7550;
+}
+
 /* ----------------------
   コンタクト
   ---------------------- */
