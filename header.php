@@ -28,17 +28,16 @@
       <!-- PC用ナビゲーション -->
       <nav class="primary-navigation wrapper">
         <!-- <button class="btn-menu">メニュー</button> -->
-        <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'main-menu',
-                    'container' => '',
-                    'menu_class' => 'menu-wrapper',
-                )
-            );
-        ?>
+        <nav id="nav-pc">
+        <a href="<?php echo home_url(); ?>/#about">About</a>
+        <a href="<?php echo home_url(); ?>/#product">product</a>
+        <a href="<?php echo home_url(); ?>/#news">News</a>
+        <a href="<?php echo home_url(); ?>/shop">Shopping</a>
+        <a href="<?php echo home_url(); ?>/contact">Contact</a>
+        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/PC/cart.png" class="online-btn" /></a>
+      
     </nav>
-     <!-- ハンバーガーメニュー -->
+    <!-- ハンバーガーメニュー -->
     <div class="header__inner">
         <button
           id="js-hamburger"
@@ -55,20 +54,20 @@
           <nav id="js-global-navigation" class="global-navigation">
             <ul class="global-navigation__list">
               <li>
-                <a href="<?php echo home_url()?>/home/#about" 
+                <a href="<?php echo home_url()?>/#about" 
                 class="global-navigation__link"
                 >About
                 </a>
               </li>
               <li>
                 <a
-                  href="<?php echo home_url("/home/#product")?>"
+                  href="<?php echo home_url("/#product")?>"
                   class="global-navigation__link"
                 >Product
                 </a>
               </li>
               <li>
-                <a href="<?php echo home_url("/home/#news")?>" class="global-navigation__link">
+                <a href="<?php echo home_url("/#news")?>" class="global-navigation__link">
                 News
                 </a>
               </li>
@@ -78,7 +77,7 @@
                 </a>
               </li>
               <li>
-                <a href="<?php echo home_url("/home/#contact")?>" class="global-navigation__link">
+                <a href="<?php echo home_url("/contact")?>" class="global-navigation__link">
                 Contact
                 </a>
               </li>

@@ -1,4 +1,4 @@
-
+<!-- 
 <?php
 function theme_setup(){
     // メニューを登録
@@ -12,4 +12,4 @@ function theme_setup(){
 // after_setup_theme アクションにフックして、テーマセットアップを行う
 add_action('after_setup_theme', 'theme_setup');
 ?>
-
+ -->
