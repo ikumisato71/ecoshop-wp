@@ -607,8 +607,11 @@ details > div > span {
 /* ----------------------
   form
    ---------------------- */
+form {
+  padding: 30px;
+  width: 60%;
+}
 
-form,
 figure,
 dl {
   display: grid;

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: お知らせ
+Template Name: news
 Template Post Type: post
 */
 ?>
