@@ -110,10 +110,10 @@
 
         <div class="product-top">
           <div class="product-top-left">
-            <h1>
+            <h2>
               お客様の理想の<br />
               サステナブルライフに寄り添います
-            </h1>
+            </h2>
             <img src="image/PC/beauty.jpg" alt="緑の中のボトル" />
           </div>
           <div class="product-top-right">
